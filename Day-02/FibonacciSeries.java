@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=0;
+        int b=1;
+        System.out.println(a+" "+b+" ");
+        System.out.println("Enter until how many terms you want:");
+        int num=sc.nextInt();
+        int c;
+        for(int i=2;i<num;i++){
+            c=a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+    }
+}
